@@ -1,0 +1,237 @@
+
+/* fonte */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
+/* Reset (limpa a configurão padrão)*/
+
+:root{
+    --cor-principal: #710FA5;
+    --cor-destaque: #A600FF;
+    --cor-01: #f9f9f9;
+    --cor-02: #cfcfcf;
+    --cor-03: #8f8f8f;
+    --cor-04: #232323;
+    --cor-brancocinza: #BEBEBE;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: "Montserrat", system-ui;
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--cor-04);
+    color: var(--cor-01);
+}
+/* classes */
+
+/* banner */
+.banner {
+    padding: 1rem;
+    position: relative;
+    height: 82vh;
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    flex-direction: column;
+    font-size: 5rem;
+    text-shadow: 0.5rem 0.3rem 0.5rem var(--cor-04);
+}
+
+.banner h1{
+    font-family: "Audiowide", sans-serif;
+   
+}
+
+.banner p {
+    font-size: 3rem;
+    color: #ffffff;
+    padding: 0.5rem;
+    gap: 1rem;
+   
+}
+
+.banner span {
+    color: #620395;
+    /* text-shadow: 0.5rem 0.1rem 0.5rem var(--cor-01); */
+}
+
+.cover{
+    position: absolute;
+    z-index: -100;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url(../img/quanto-custa-um-personal-trainer-1024x542.png);
+    background-size: cover;
+    background-position: center;
+    filter: brightness(50%);
+}
+
+/* menu */
+.menu{
+    background-color: rgb(26, 3, 37);
+    padding: 0.8rem 1rem;
+    font-weight: 700;
+    font-size: 1.5rem;
+
+}
+
+.menu ul{
+    list-style-type: none;
+    display: flex;
+    justify-content:space-evenly;
+    gap: 1rem;
+    
+
+}
+
+.menu a {
+    text-decoration: none;
+    color: var(--cor-01);
+    padding: 1rem;
+    border: solid 2px color(srgb rgbargba(0, 128, 0, 0) 0, 0, 0) rgba(0, 128, 0, 0) rgba(0, 0, 255, 0);
+    transition: 0.9s;
+    
+
+}
+
+.menu a:hover {
+    color: var(--cor-destaque);
+    transition: 0.5s ;
+}
+
+/* corpo */
+.corpo{
+    background-color: #8f8f8f;
+    padding: 1rem 3rem;
+    text-align: justify;
+    min-height: 25rem;
+    font-size: 1.3rem;
+
+}
+
+.modalidades {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 3rem;
+
+    margin-top: 6rem;
+    padding: 0.4rem;
+    margin-bottom: 4rem;
+}
+
+.card {
+    border-radius: 0.9rem;
+    transition: 0.3s;
+    /* overflow: hidden; */
+    text-align: center;
+    padding: 10px;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    /* box-shadow:  x y desfoque range cor; */
+    box-shadow: 0 0 0.7rem 1.3rem, var(--cor-principal);
+    background-color: var(--cor-principal);
+}
+
+.card img {
+    width: 90%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+    /* Borda arredondada somente na parte superior da imagem */
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+
+.card div {
+    padding: 1.3rem;
+    
+}
+
+
+/* rodape */
+.rodape {
+    color: var(--cor-03);
+    min-height: 16rem;
+    text-align: center;
+    padding: 2rem;
+    gap: 1rem;
+    text-align: justify;
+    justify-items: center;
+    display: grid;
+    grid-template-columns: auto auto 30% auto auto;
+    /* grid-template-columns: 30% auto auto 20%; */
+}
+
+.rodape 
+
+.rodape ul {
+    list-style-type: none;
+}
+
+.rodape li {
+    margin: 0.7rem;
+}
+
+.rodape a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* cores de links */
+
+.rodape a:hover {
+    color: var(--cor-01);
+}
+
+.rodape i {
+    font-size: 2.5rem;
+}
+
+.redes-sociais div {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    padding: 0.4rem;
+
+} 
+
+.barra {
+    height: 100%;
+    border-right: solid 1px #363131;
+    /* width: 1rem; */
+}
+
+.mapa {
+    width: 90%;
+    height: 36rem;
+    margin: auto;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+}
+
+.mapa iframe {
+    
+    width: 100%;
+    height: 100%;
+}
+
+h1, p {
+    margin: 0.7rem 0;
+}
